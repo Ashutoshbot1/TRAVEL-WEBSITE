@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+/* /////////////DEFAULT/////////////// */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7rem;
+    background-color: #bfbfbf;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+
+}
+
+h1,h2,h3{
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+/* //////////////////////////////// */
+
+
+
+
+/* ############## UTILITY CLASSES ########### */
+
+
+.container{
+    width:90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color:#f4f4f4;
+}
+
+.text-black{
+    color:#333;
+}
+
+.text-grey{
+    color: #555;
+}
+
+.btn{
+    /* background-color: white; */
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0.5em 0;
+    text-transform: uppercase;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 10rem;
+}
+
+.btn-secondary{
+    border:2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: #fff;
+}
+
+.btn-secondary:hover{
+background-color: #FCF3F2;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+
+
+
+/* ################################ */
+
+
+
+.header{
+    height: 95vh;
+    border: 5px solid;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../IMG/header-image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* /////////////navbar//////// */
+
+.navbar{
+    padding: 1rem;
+}
+
+
+/* //////////////LOGO///////// */
+
+.navbar .logo{
+    float: left;
+
+    margin-top: 1.8rem;
+}
+
+
+
+
+/* ///////////////////ANCHOR/////////////// */
+
+.nav-item a{
+    
+    text-decoration: none;
+
+}
+
+
+.nav-item a:link,
+.nav-item a:visited{
+    color: #f4f4f4;
+}
+
+.nav-item a:hover{
+    border-bottom: 1px solid;
+    padding:0.3rem ;
+}
+
+
+
+/* //////////////// UL ////////////// */
+
+.navbar .nav-items{
+    padding: 1rem;
+    float: right;
+}
+
+
+/* ////////////// CLEAR-FIX///////////// */
+
+.navbar::after{
+    content: "";
+    display:block;
+    clear: both;
+}
+
+
+
+/* ////////////////// LI ////////////// */
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform:uppercase;
+}
+
+
+/* /////////////HEADER CONTENT///////////// */
+
+
+/* //////////HEADER///////// */
+
+.header .header-content{
+    /* border: 2px solid white; */
+    position: absolute;
+    top:50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+
+}
+
+
+
+/* ///////////H1/////////// */
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+/* ////////HEADER-CONTENT PARA//////// */
+
+.header-content p{
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* ////////////////////showcase########## */
+
+.showcase{
+    margin: 10rem 0;
+}
+
+.box{
+    height: 350px;
+    margin-bottom: 10rem;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px #aaaaaa4b;
+}
+
+
+.box1 .img-box,.box2 .text-box{
+    float: left;
+    width:50%;
+}
+
+.box1 .text-box,.box2 .img-box{
+    float: right;
+    width:50%;
+}
+
+box::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+.box .img-box{
+    height: 100%;
+}
+
+
+.box .text-box{
+    padding: 3 rem;
+}
+
+.img-box img{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+} 
+
+.text-box h2{
+    /* text-align: center; */
+    margin-bottom: 5rem;
+}
+
+.text-box{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+
+/* //////////////features/////////// */
+
+.features{
+    background-color: white;
+    padding: 10rem;
+}
+
+.box-wrapper{
+    box-shadow: 0px 0px 20px 0px #0000004a;
+}
+
+.boxx{
+    background: #fff;
+    width:33%;
+    float: left;
+    text-align: center;
+    padding: 1.6rem;
+    background-color: #333;
+    color: white;
+}
+
+.boxx h2{
+    margin-bottom: 1.6rem;
+}
+
+
+
+.boxx2{
+    background: #e63946;
+}
+
+
+.features::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ////////////////footer/////////// */
+
+.footer{
+    background-color: #333;
+    color: white;
+    padding: 3rem;
+
+    text-align: center;
+}
+
+
+.social-media-links i{
+    margin: 2rem;
+}
+
+
+
+
+
+/* ###########About Us################## */
+
+
+.about{
+    padding: 5rem;
+    background: #f3f3f3;
+
+}
+
+.about .container{
+    /* border: 2px solid green; */
+    background-color: white;
+    padding: 3rem;
+    box-shadow:0px 0px 20px 0px #33333346;
+}
+
+.about h2{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    border-bottom: 5px solid #e63946;
+}
+
+.about p{
+    line-height: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about .list{
+    /* border: 2px solid green; */
+    width: 80%;
+    margin:auto;
+    padding: 2rem;
+    
+
+}
+
+.list .left{
+    float: left;
+}
+
+.list .right{
+    float: right;
+}
+
+.list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.list li::before{
+    content:'\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+
+
+/* ############# NUmber############### */
+
+.numbers{
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.numbers div{
+    
+    width:25%
+}
+
+.numbers p{
+    padding: 0px;
+    margin: 0px;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.numbers div{
+    float: left;
+}
+
+.numbers::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.numbers .num{
+    color: #e63946;
+    font-weight: 700;
+}
+
+.numbers .desc{
+    font-weight: 500;
+    /* color: ; */
+}
+
+
+/* //////////////foot////////////// */
+
+.foot{
+    
+    background-color: #e63946;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+
+.foot p{
+    width: 60%;
+    color: #ddd;
+    float: left;
+    padding-top:2rem;
+    padding-left: 1rem;
+}
+
+.foot a{
+    float: right;
+
+    /* display: inline-block; */
+    border: 2px solid #ddd;
+
+    color: #ddd;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+
+
+
+    }
+
+.foot::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+/* ################## CONTct############## */
+
+.contact-form{
+    padding:5rem ;
+    background: #f7f7f7;
+}
+
+.wrapper{
+    box-shadow:0px 0px 20px 0px #33333346;
+}
+
+.wrapper .address{
+    /* border:2px dotted green; */
+    width:49%;
+    float: left;
+    background: #fff;
+    padding: 1rem;
+}
+
+.wrapper .form{
+    /* border: 2px dotted blue; */
+    width:49%;
+    float: right;
+    background: #fff;
+}
+
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.address i{
+    display: inline-block;
+    margin-right: 1rem;
+    /* padding: 1rem; */
+}
+
+.address h2{
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.address-group{
+    margin-bottom: 3rem;
+}
+
+.wrapper img{
+    width: 90%;
+    min-height: 38rem;
+    max-width: 90%;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+/* ################ form styling ############ */
+
+.form{
+    padding: 2rem;
+    height: 100%;
+}
+.form h1{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 6px solid #e63946;
+    padding-bottom: 2rem;
+}
+.form-group{
+    margin: 2rem 0;
+    font-size: 2.2rem;
+}
+
+.form-group label{
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.form-group input:hover{
+    border: 2px solid black;
+}
+
+.form-group label::after{
+    content: "*";
+    color: #e63946;
+}
+
+
+.form-group input{
+    width: 100%;
+    height: 3rem;
+}
+
+.form textarea{
+    width:100%;
+    height:16rem;
+}
+
+.form-btn{
+    display: block;
+    /* border:2px solid; */
+    margin: auto;
+    padding: 0.5rem 4rem;
+    color: #f4f4f4;
+    background-color: #e63946;
+    text-transform: uppercase;
+}
+
+.form-btn:hover{
+    background-color: #d63927;
+}
+
